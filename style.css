@@ -1,0 +1,60 @@
+.kontenerlisty {
+    text-align: center;
+}
+
+.lista {
+    display: inline-block;
+    text-align: left;
+}
+
+.lista, .lista li {
+	list-style: none;
+}
+
+.lista ul {
+	position: absolute;
+	visibility: hidden;
+	top: 1px;
+    left: 170px;
+    margin: 0 auto;
+	display: table;
+}
+
+.lista li {
+	padding-bottom: 1px;
+	width: 160px;
+	position: relative;
+	margin-left: 10px;
+}
+
+.lista li:hover {
+	visibility: visible;
+}
+
+.lista li:hover ul {
+	visibility: visible;
+	width: auto;
+	height: auto;
+	margin-left: -50px;
+	margin-top: -2px;
+}
+
+.lista a, .lista li:hover li a {
+	display: block;
+	border-top: 2px solid black;
+    border-left: 2px solid black;
+	border-bottom: 2px solid black;
+	padding: 1px;
+	width: 160px;
+	background-color: lightgray;
+	color: black;
+	text-decoration: none;
+	font: 12px/30px verdana, sans-serif;
+	text-align: center;
+}
+
+.lista li:hover li a {
+    border-left: none;
+    border-right: 2px solid black;
+}
+
